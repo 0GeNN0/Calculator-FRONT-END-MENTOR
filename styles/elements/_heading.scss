@@ -1,0 +1,77 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5rem;
+}
+
+.header h1 {
+  font-size: 3.2rem;
+}
+
+.themes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 150px;
+}
+
+.themes span {
+  font-size: 1.5rem;
+}
+
+ul {
+  width: 70px;
+  height: 25px;
+  position: relative;
+  list-style: none;
+  border-radius: 15px;
+  background: $dark-blue-toggle-keypad-background;
+  cursor: pointer;
+}
+
+body.theme-2 ul {
+  background-color: $Grayish-red-toggle-keypad-background;
+}
+
+body.theme-3 ul {
+  background-color: $Very-dark-violet-toggle-keypad-screen-background;
+}
+
+ul li[id] {
+  position: absolute;
+  top: -25px;
+  height: 50px;
+}
+
+ul li:first-child {
+  left: 8px;
+}
+
+ul li:nth-child(2) {
+  left: 50%;
+  margin-left: -6px;
+}
+
+ul li:nth-child(3) {
+  right: 8px;
+}
+
+ul li.toggle--li {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #c13fc1;
+  top: 5px;
+  left: 5px;
+  background: $red-keybackground-toggle;
+  transition: 0.5s ease-in-out;
+}
+
+body.theme-2 ul li.toggle--li {
+  background: $Orange-key-background-toggle;
+}
+
+body.theme-3 ul li.toggle--li {
+  background: $Pure-cyan-key-background-toggle;
+}

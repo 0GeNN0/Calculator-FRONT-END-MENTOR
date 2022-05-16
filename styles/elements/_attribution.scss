@@ -1,0 +1,31 @@
+.attribution a {
+  color: $dark-blue-screen-background;
+  text-decoration: none;
+}
+
+body .attribution a:hover {
+  color: $white;
+}
+
+body.theme-2 .attribution a {
+  color: $Orange-key-background-toggle;
+}
+
+body.theme-2 .attribution a:hover {
+  color: $Very-dark-grayish-yellow;
+}
+
+body.theme-3 .attribution a {
+  color: $Pure-cyan-key-background-toggle;
+}
+
+body.theme-3 .attribution a:hover {
+  color: $Light-yellow;
+}
+
+// MEDIA
+@media (max-width: $mobile) {
+  .attribution {
+    font-size: 1rem;
+  }
+}

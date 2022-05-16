@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="font/Spartan-Bold.ttf" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=League+Spartan:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="images/favicon-32x32.png" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <title>Frontend Mentor | Calculator app</title>
+  </head>
+  <body>
+    <div class="calculater">
+      <header>
+        <div class="container">
+          <div class="header">
+            <h1>calc</h1>
+            <!-- Toggle Themes -->
+            <div class="themes">
+              <span>THEMES</span>
+              <ul class="toggle">
+                <li id="one">1</li>
+                <li id="two">2</li>
+                <li id="three">3</li>
+                <li class="toggle--li"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="container">
+          <!-- Rendering screen -->
+          <section class="screen">
+            <p id="render">0</p>
+          </section>
+          <!-- Numbers -->
+          <div class="numbers">
+            <button class="num">7</button>
+            <button class="num">8</button>
+            <button class="num">9</button>
+            <button class="num" id="del">Del</button>
+            <button class="num">4</button>
+            <button class="num">5</button>
+            <button class="num">6</button>
+            <button class="num">+</button>
+            <button class="num">1</button>
+            <button class="num">2</button>
+            <button class="num">3</button>
+            <button class="num">-</button>
+            <button class="num">.</button>
+            <button class="num">0</button>
+            <button class="num">/</button>
+            <button class="num">x</button>
+            <button class="num" id="reset">RESET</button>
+            <button class="num" id="equal">=</button>
+          </div>
+        </div>
+      </main>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+        Frontend Mentor</a
+      >
+      . Coded by
+      <a href="https://github.com/0GeNN0" target="_blank">Omar Elsayed</a>.
+    </div>
+    <script src="scripts/app.js"></script>
+  </body>
+</html>

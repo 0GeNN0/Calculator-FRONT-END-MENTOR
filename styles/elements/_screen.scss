@@ -1,0 +1,22 @@
+.screen {
+  padding: 2.5rem 0;
+  margin: 2.5rem 0;
+  background: $dark-blue-screen-background;
+  border-radius: 10px;
+}
+
+body.theme-2 .screen {
+  background: $Very-light-gray-screen-background;
+}
+
+body.theme-3 .screen {
+  background: $Very-dark-violet-toggle-keypad-screen-background;
+}
+
+#render {
+  text-align: right;
+  font-size: 5rem;
+  padding-right: 2.5rem;
+  letter-spacing: 0.1rem;
+  overflow: hidden;
+}

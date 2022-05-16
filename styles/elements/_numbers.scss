@@ -1,0 +1,102 @@
+.numbers {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(50px, 1fr));
+  gap: 20px;
+  padding: 2.5rem;
+  background: $dark-blue-toggle-keypad-background;
+  border-radius: $border-radius;
+}
+
+body.theme-2 .numbers {
+  background: $Grayish-red-toggle-keypad-background;
+}
+
+body.theme-3 .numbers {
+  background: $Very-dark-violet-toggle-keypad-screen-background;
+}
+
+#equal,
+#reset {
+  grid-column: span 2;
+}
+
+.num {
+  font-size: 3.2rem;
+  padding: 1rem 0;
+  color: $very-dark-grayish-blue;
+  background: $light-grayish-orange-keybackground;
+  border-radius: $border-radius;
+  box-shadow: 0 4px $Dark-grayish-orange-key-shadow;
+  border: none;
+  transition: 0.1s ease-in-out;
+  font-family: 'Spartan', 'Lato', sans-serif;
+}
+
+body.theme-2 .num {
+  background: $Light-grayish-yellow-key-background;
+  box-shadow: 0 4px $Dark-grayish-orange-key-shadow;
+}
+
+body.theme-3 .num {
+  background: $Very-dark-violet-key-background;
+  box-shadow: 0 4px $Dark-magenta-key-shadow;
+  color: $Light-yellow;
+}
+
+#equal {
+  color: white;
+  background: $red-keybackground-toggle;
+  box-shadow: 0 4px $dark-red-keyshadow;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+body.theme-2 #equal.num {
+  background: $Orange-key-background-toggle;
+  box-shadow: 0 4px $Dark-orange-key-shadow;
+}
+
+body.theme-3 #equal.num {
+  background: $Pure-cyan-key-background-toggle;
+  box-shadow: 0 4px $Soft-cyan-key-shadow;
+}
+
+#del,
+#reset {
+  background: $dark-blue-key-background;
+  color: $white;
+  box-shadow: 0 4px $dark-blue-keyshadow;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+body.theme-2 #del.num,
+body.theme-2 #reset.num {
+  background: $Dark-moderate-cyan-key-background;
+  box-shadow: 0 4px $Very-dark-cyan-key-shadow;
+}
+
+body.theme-3 #del.num,
+body.theme-3 #reset.num {
+  background: $Dark-violet-key-background;
+  box-shadow: 0 4px $Vivid-magenta-key-shadow;
+}
+
+.num:active,
+#del:active,
+#reset:active,
+#equal:active {
+  background-image: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+//MEDIA
+@media (max-width: $mobile) {
+  .numbers {
+    gap: 15px;
+  }
+  .num {
+    border-radius: 0.75rem;
+  }
+}
