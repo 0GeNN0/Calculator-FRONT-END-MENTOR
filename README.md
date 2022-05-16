@@ -36,8 +36,8 @@ Users should be able to:
 
 - ### Links
 
-  - Solution URL: [Here]()
-  - Live Site URL: [Here]()
+  - Solution URL: [Here](https://www.frontendmentor.io/challenges/calculator-app-9lteq5N29/hub/responsive-calculator-app-with-scss-grid-rJxznYyP9)
+  - Live Site URL: [Here](https://0genn0.github.io/Calculator-FRONT-END-MENTOR/)
 
 ## My process
 
